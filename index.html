@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Info Graphic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://kit.fontawesome.com/1aadb02028.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+
+    <script src="
+    https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.js
+    "></script>
+    <link href="
+    https://cdn.jsdelivr.net/npm/air-datepicker@3.4.0/air-datepicker.min.css
+    " rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(./images/background.jpg);
+        }
+    </style>
+    
+
+</head>
+<body>
+    
+
+<div class="container">
+    <div class="leftside">
+        <div class="eye"><i class="fa-solid fa-eye"></i></div>
+        <div class="leftmenu">
+            <ul>
+                <li><i class="fa-solid fa-heart-pulse iconhover"></i></li> 
+                <li><i class="fa-solid fa-satellite-dish iconhover"></i></li>
+                <li><i class="fa-solid fa-calendar iconhover"></i></li>
+                <li><i class="fa-solid fa-sliders iconhover"></i></li>
+                <li><i class="fa-regular fa-comments iconhover"></i></li>
+            </ul>
+        </div>
+        <div class="exit"><i class="fa-solid fa-right-from-bracket"></i></div>
+    </div>
+    <div class="maincontent">
+        <div class="maintopbar"><div><i class="fa-solid fa-table-list"></i>       <i class="fa-solid fa-bars"></i></div> <button>LAST 15 DAYS <i class="fa-solid fa-chevron-down fa-2xs"></i></button></div>
+        <div class="socialcard">
+        <div class="card"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i> <br>
+            <p class="numberfollow">280k</p> <br>
+            <p class="textfollow">Followers</p> <br>
+            <i class="fa-solid fa-ellipsis"></i>
+        </div>
+        <div class="card"><i class="fa-brands fa-instagram" style="color: #405DE6;"></i> <br>
+            <p class="numberfollow">680k</p> <br>
+            <p class="textfollow">Followers</p> <br>
+            <i class="fa-solid fa-ellipsis"></i></div>
+        <div class="card"><i class="fa-brands fa-youtube" style="color: #FF0000;"></i> <br>
+            <p class="numberfollow">2.3M</p> <br>
+            <p class="textfollow">Followers</p> <br>
+            <i class="fa-solid fa-ellipsis"></i></div>
+        <div class="card"><i class="fa-brands fa-facebook-f" style="color: #4267B2;"></i> <br>
+            <p class="numberfollow">50k</p> <br>
+            <p class="textfollow">Followers</p> <br>
+            <i class="fa-solid fa-ellipsis"></i></div>
+    </div>
+        <div class="grafik">
+                  <div class="chartMainWrapper">
+                  <div class="headerWrapper">
+                    <p class="title">Instagram Subscribers</p>
+                    <div class="infoWrapper">
+                        <div class="gainbox">
+                            
+                            <span class="gain-circle green"></span>
+                            <span class="text">Gained</span>
+                        </div>
+                        <div class="lostbox">
+                            
+                            <span class="gain-circle red"></span>
+                            <span class="text">Lost</span>
+                        </div>
+                    </div>
+                  </div> 
+                  <div class="mainContentWrapper">
+                    <canvas width="100%" height="30" id="chart1"></canvas>
+                  </div>
+                </div> 
+                
+        </div>
+        <div class="bottominfo">
+            <div class="tablebottom">
+                <table class="table">
+                    <tr>
+                        <th>
+                            Key Metrics
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Clicks</td>
+                        <td id="secondcontentfortable">10k </td>
+                        
+                    </tr>
+                    
+                    <tr>
+                        <td>Likes</td>
+                        <td id="secondcontentfortable">680</td>
+                        
+                    </tr>
+                    <tr>
+                        <td>Followers</td>
+                        <td id="secondcontentfortable">8k</td>
+                    </tr>
+                    <tr>
+                        <td>Impressions</td>
+                        <td id="secondcontentfortable">5500</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="bottomcard">
+                
+                <p>Engaged Users</p>
+                <p class="numberincard">12.2k</p>
+                <p><i class="fa-solid fa-angles-up" style="color: greenyellow"></i> 19%</p>
+            </div>
+            <div class="bottomcard"><p>Page <br> Impressions</p>
+                <p class="numberincard">8.6k</p>
+                <p><i class="fa-solid fa-angles-down" style="color: red"></i> 9%</p></div>
+        </div>
+
+
+    </div>
+    <div class="rightside">
+        <div class="topbar">
+            <i class="fa-regular fa-bell"></i>
+            <button><i class="fa-sharp fa-solid fa-gift fa-xs"></i> 2 New Updates</button>
+            <i class="fa-regular fa-user"></i>
+        </div>
+        <div class="image"><img src="./images/scrum.png" alt="scrum"></div>
+        <div class="calendar" id="takvim"></div>
+        <div class="notification">
+            <div class="nat1"><p><i class="fa-solid fa-hand"></i> Say hi to <b>Laith Hart</b></p> <img src="./images/men.png" alt="men" ></div>
+            <div class="nat2"><p><i class="fa-solid fa-hand"></i> Say hi to <b>Sidney</b></p> <img src="./images/woman.png" alt="woman" ></div>
+        </div>
+
+    </div>
+</div>
+<script src="./js/app.js"></script>
+
+<script>
+new AirDatepicker('#takvim', {
+    inline: true
+})
+</script>
+
+    
+</body>
+</html>
