@@ -1,0 +1,460 @@
+body{
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+
+
+}
+
+.container{
+    display:flex;
+    height: 770px;
+    border: 1px solid;
+    border-radius: 5%;
+    max-width:1600px ;
+    
+}
+
+.leftside{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 100px;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    
+}
+
+
+.fa-eye,.fa-heart-pulse, .fa-satellite-dish, .fa-calendar, .fa-sliders,.fa-comments{
+    cursor: pointer;
+    
+
+}
+
+.eye{
+    
+    margin-top: 20px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 36px
+}
+
+
+
+.leftmenu{
+
+    list-style-type: decimal;
+    font-size: 20px;
+    padding-right: 20px;
+    }
+
+
+
+.leftmenu ul li{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 36px;
+    
+}
+.exit{
+    margin-top: 300px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.maincontent{
+    flex: 2;
+    background-color:#F8F8FF;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.maintopbar{
+    display: flex;
+    /* background-color: bisque; */
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.maintopbar button{
+    cursor: pointer;
+    padding: 6px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+}
+
+.fa-bars{
+    color: rgba(0,0,0,0.4);
+}
+
+
+.socialcard{
+    display: flex;
+    /* background-color: brown; */
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
+
+}
+.card{
+    display: flex;
+    background-color:#F8F8FF;
+    border: 5px solid rgb(255,255,255) ;
+    height: 128px ;
+    justify-content:center ;
+    align-items:flex-start ;
+    border-radius: 12px;
+    flex-direction: column;
+    padding: 20px;
+        
+
+}
+.card .fa-twitter, .fa-youtube, .fa-instagram, .fa-facebook-f, .numberfollow, p, i{
+    margin: -1px;
+}
+
+.fa-twitter,.fa-youtube, .fa-instagram, .fa-facebook-f{
+    font-size: 40px;
+    
+}
+
+.numberfollow{
+    font-size: 32px;
+}
+
+.textfollow{
+    margin-top: -15px;
+    font-size: 12px;
+    color: rgba(0,0,0,0.4);
+}
+
+.fa-ellipsis{
+    margin-top: 5px;
+    margin-left: 82px;
+}
+
+
+.grafik{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aqua; */
+    height:250px ;
+    max-width: 700px;
+/* margin-bottom: 100px; */
+}
+
+
+
+.bottominfo{
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    align-items: center;
+}
+
+.tablebottom{
+    display: flex;
+    height: 200px;
+    width: 320px;
+    border-radius: 20px;
+    
+}
+
+table{
+    
+        border-radius: 20px;
+        text-align: left;
+        border-collapse: collapse;
+        width: 100%;
+        background-color:#F8F8FF;
+        border: 5px solid rgb(255,255,255) ;
+        border-radius: 20px;
+       
+
+}
+
+table tr {
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+
+}
+
+
+table th{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    padding-bottom: 15px;
+    font-size: 24px;
+
+    
+}
+
+table td{
+    border-bottom: 1px solid #ddd;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom:5px;
+}
+
+#secondcontentfortable{
+    text-align: right;
+}
+
+.bottomcard{
+    color: white;
+    display: flex;
+    background-color: blueviolet;
+    border-radius: 24px;
+    width:150px;
+    height: 200px;
+    margin:20px;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color:#643A69;
+    border: 5px solid rgb(255,255,255) ;
+    margin-top: 10px;
+}
+.bottomcard p{
+    text-align: center;
+}
+
+.numberincard{
+
+        font-size: 36px;
+}
+
+
+
+
+
+
+
+
+.rightside{
+    flex: 1;
+    background-color: white;
+    max-width: 320px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.topbar{
+/* background-color: aqua; */
+height: 72px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.topbar button{
+    cursor: pointer;
+    padding: 5px;
+    background-color: aliceblue;
+    border: none;
+    border-radius: 8px;
+    padding-right: 15px;
+}
+
+.image {
+    /* background-color: chartreuse; */
+    height: 174px;
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center; /* Dikeyde ortala */
+}
+
+.image img {
+    max-width: 100%;
+    height: 174px;
+}
+
+.calendar{
+    /* background-color:darkcyan; */
+    height: 260px;
+    margin-top: 50px;
+    margin-right: 20px;
+    margin-bottom: -20px;
+
+}
+
+.notification{
+    padding-top: 50px;
+    height: 174px;
+
+
+}
+
+.nat1{
+    display:flex;
+    background-color: white;
+    height: 64px;
+    border-radius: 12px;
+    margin: 15px;
+    border:solid 1px  rgba(0,0,0,0.4);
+    font-size: 12px;
+    
+    align-items:center;
+    /* justify-content: space-around; */
+    justify-content:space-around;
+}
+
+.nat1 img{
+    width: 45px;
+    margin-left: -28px;
+}
+
+.nat1 i{
+    color:burlywood ;
+
+}
+
+
+.nat2{
+    display:flex;
+    background-color: white;
+    height: 64px;
+    border-radius: 12px;
+    margin: 15px;
+    border:solid 1px  rgba(0,0,0,0.4);
+    font-size: 12px;
+
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content:space-around;
+
+}
+
+.nat2 img{
+    width: 45px;
+    margin-left: -28px;
+}
+
+.nat2 i{
+    color:burlywood ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.chartMainWrapper{
+    background-color:#F8F8FF;
+    border: 5px solid rgb(255,255,255) ;
+    width: 750px;
+    height: 250px;
+    /* background-color: #e0d3d3; */
+    border-radius: 20px;
+    padding: 10px;
+    padding-bottom:0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+}
+
+.chartMainWrapper .headerWrapper{
+    display: flex;
+    /* background-color: rgba(236, 25, 25, 0.425); */
+
+}
+.chartMainWrapper .headerWrapper .title{
+    display: flex;
+    font-size: 12px;
+    font-weight:300 ;
+}
+.chartMainWrapper .infoWrapper{
+    display: flex;
+    gap: 8px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox,
+.chartMainWrapper .infoWrapper .lostbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.chartMainWrapper .infoWrapper .gainbox .text,
+.chartMainWrapper .infoWrapper .lostbox .text{
+    display: flex;
+    font-size: 11px;
+}
+
+
+.chartMainWrapper .infoWrapper span.gain-circle{
+    display: inline-block;
+    background-color: #fff;
+    width: 6px;
+    height: 5px;
+    border-radius: 9999999px;
+    
+}
+
+.chartMainWrapper .infoWrapper span.gain-circle.green{
+    background-color: yellowgreen;
+}
+.chartMainWrapper .infoWrapper span.gain-circle.red{
+    background-color: red;
+}
+
+.chartMainWrapper .mainContentWrapper{
+    height: 225px;
+    flex:1;
+}
+
+.chartMainWrapper .mainContentWrapper canvas{
+    width: 100%;
+}
+
+.headerWrapper{
+    justify-content: space-between;
+}
